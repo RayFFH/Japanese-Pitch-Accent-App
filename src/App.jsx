@@ -8,24 +8,24 @@ import './input.css'; // Import your styles if needed
 
 
 const TitlePage = ({ onStartQuiz }) => (
-  <div className="min-h-screen bg-slate-800 text-white text-center flex flex-col items-center justify-center">
-    <h1 className="text-6xl font-extrabold uppercase mb-8 rounded-full">WELCOME TO JAPANESE PITCH ACCENT TRAINER!</h1>
-    <p className="text-2xl mb-4 rounded-full">Japanese pitch accent is the fluxation of low and high pitch sounds within a word</p>
-    <p className="text-2xl mb-4 rounded-full">Listen carefuly and type the correct Pitch Fluctation using H and L</p>
-    <p className="text-2xl mb-4 rounded-full">Are you ready to test your Pitch Accent knowledge?</p>
-    <button
-      className="mt-8 px-6 py-3 border border-white rounded-full text-xl font-bold hover:bg-white hover:text-slate-800 transition duration-300"
-      onClick={onStartQuiz}
-    >
-      Start Quiz
-    </button>
+  <div className="min-h-screen bg-indigo-800 text-white text-center flex flex-col items-center justify-center">
+  <h1 className="text-6xl font-extrabold uppercase mb-8 rounded-full">日本語のイニシエーション</h1>
+  <p className="text-2xl mb-4 rounded-full">『Japanese pitch accent is the fluxation of low and high pitch sounds within a word』</p>
+  <p className="text-2xl mb-4 rounded-full">『Listen carefully and type the correct Pitch Fluctation using H and L』</p>
+  
+  <button
+    className="mt- px-20 py-4 border border-white rounded-full text-2xl font-bold hover:bg-white hover:text-slate-800 transition duration-300"
+    onClick={onStartQuiz}
+  >
+    Start Quiz
+  </button>
     <br></br>
-    <img
+    {/* <img
       src="/public/pitch.jpg"  // Replace with the actual path to your image
       alt="Hiragana Quiz Logo"     // Provide an appropriate alt text
       className="mb-8 rounded-full centered"
       style={{ width: '500px', height: '300px', margin: 'auto' }}  // Adjust the width and height as needed
-    />
+    /> */}
   </div>
 );
 
@@ -64,7 +64,7 @@ function App() {
     newAudio.addEventListener('loadeddata', () => {
       // Once the audio has loaded, update the audioRef
       audioRef.current = newAudio;
-      playAudio();
+      //playAudio();
     });
   };
 
@@ -135,7 +135,7 @@ function App() {
       {showTitle ? (
         <TitlePage onStartQuiz={handleStartQuiz} />
       ) : (
-        <div className="min-h-screen bg-slate-800 text-white text-center">
+        <div className="min-h-screen text-white text-center bg-indigo-800">
           {/* Audio element */}
           <audio ref={audioRef}>
             <source src={hiragana[current].audio} type="audio/mpeg" />
@@ -148,6 +148,7 @@ function App() {
           <p>Streak: {streak} / Max Streak: {maxStreak}</p>
         </div>
       </header>
+
   
       <div className="text-9xl font-bold mb-8">
         <p>{hiragana[current].hiragana}</p>
