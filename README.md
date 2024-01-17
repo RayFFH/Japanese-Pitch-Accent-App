@@ -1,8 +1,12 @@
-# React + Vite
+# Game that tests your Japanese Pitch accent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Fundamentals 
+イニシエーション
+![image](https://github.com/RayFFH/Japanese-Pitch-Accent-App/assets/57190209/03457043-dbfc-4922-94c0-616b066025f9)
+In japanese Words that have the same pronouciation can in fact have a different meaning depedning on the pitch of word.
 
-Currently, two official plugins are available:
+This game tests your hearing ability by letting you listen to audio files and guess their corresponding pitch.
+Developed with React and Tailwind
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/RayFFH/Japanese-Pitch-Accent-App/assets/57190209/b9739c7a-d9f2-4ce7-93a2-4c89837f9c8f)
+
