@@ -3,6 +3,7 @@
 # Fundamentals 
 イニシエーション
 ![image](https://github.com/RayFFH/Japanese-Pitch-Accent-App/assets/57190209/03457043-dbfc-4922-94c0-616b066025f9)
+
 In japanese Words that have the same pronouciation can in fact have a different meaning depedning on the pitch of word.
 
 This game tests your hearing ability by letting you listen to audio files and guess their corresponding pitch.
