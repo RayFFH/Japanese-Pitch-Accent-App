@@ -72,7 +72,7 @@
   </ol>
 </details>
 
-<img src="hiraganaimage.png" alt="Logo" width="900" height="600">
+<img src="hiraganaimage.png" alt="Logo" width="800" height="500">
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
