@@ -11,7 +11,7 @@ const TitlePage = ({ onStartQuiz }) => (
   <div className="min-h-screen bg-indigo-800 text-white text-center flex flex-col items-center justify-center">
   <h1 className="text-6xl font-extrabold uppercase mb-8 rounded-full">日本語のイニシエーション</h1>
   <p className="text-2xl mb-4 rounded-full">『Japanese pitch accent is the fluxation of low and high pitch sounds within a word』</p>
-  <p className="text-2xl mb-4 rounded-full">『Listen carefully and type the correct Pitch Fluctation using H and L』</p>
+  <p className="text-2xl mb-4 rounded-full">『Listen carefully and type the correct Pitch Fluctation using H(high pitch) and L(low) and X(medium)』</p>
   
   <button
     className="mt- px-20 py-4 border border-white rounded-full text-2xl font-bold hover:bg-white hover:text-slate-800 transition duration-300"
@@ -36,7 +36,7 @@ function App() {
   const hiragana = [
     { accent: 'LH', hiragana: 'ちょうめ', meaning: 'district of a town', audio: choumeAudio },
     { accent: 'LH', hiragana: 'しょうしん', meaning: 'heartbreak', audio: shoushinAudio },
-    { accent: 'LH', hiragana: 'いっちする', meaning: 'coincidence', audio: icchisuruAudio },
+    { accent: 'LHX', hiragana: 'いっちする', meaning: 'coincidence', audio: icchisuruAudio },
     { accent: 'LHL', hiragana: 'たとえば', meaning: 'for example', audio: tatoebaAudio },
     { accent: 'HL', hiragana: 'せいき', meaning: 'for example', audio: seikiAudio },
   ];
@@ -118,7 +118,7 @@ function App() {
   
   useEffect(() => {
     // Log the error state after the component has re-rendered
-    setRandomHiragana();
+    //setRandomHiragana();
     setStreak(parseInt(localStorage.getItem('streak')) || 0);
     setMaxStreak(parseInt(localStorage.getItem('maxStreak')) || 0);
     console.log('Error State:', error);
