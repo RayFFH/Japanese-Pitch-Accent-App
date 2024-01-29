@@ -61,12 +61,14 @@ function App() {
     // Update audio source
     const newAudio = new Audio(hiragana[randomIndex].audio);
     newAudio.playbackRate = playbackSpeed;
-    newAudio.addEventListener('loadeddata', () => {
-      // Once the audio has loaded, update the audioRef
-      audioRef.current = newAudio;
-      //playAudio();
+    newAudio.addEventListener('ended', () => {
+      // Once the audio has ended, set a timeout and then update the audioRef
+      setTimeout(() => {
+        audioRef.current = new Audio(hiragana[randomIndex].audio);
+        audioRef.current.playbackRate = playbackSpeed;
+      }, 500); // Adjust the timeout as needed
     });
-  };
+  }
 
   const handleSpeedChange = (speed) => {
     setPlaybackSpeed(speed);
