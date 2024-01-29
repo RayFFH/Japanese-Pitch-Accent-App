@@ -160,6 +160,7 @@ function App() {
             type="text"
             onChange={handleChange}
             value={input}
+            onKeyDown={(e) => e.key === 'Enter' && handleSubmit(e)}
             className="block w-24 bg-transparent border-b-2 border-b-white mx-auto outline-none text-center text-6xl pb-2"
           />
         </form>
