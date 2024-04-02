@@ -33,7 +33,6 @@
   <h3 align="center">イニシエーション Japanese-Pitch-Accent-App</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/RayFFH/Japanese-Pitch-Accent-App/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
